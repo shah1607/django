@@ -1,0 +1,112 @@
+<html>
+<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+		</head>
+<body>
+
+<center>
+	<!--<a href="{% url '2.html' %}">Student Form</a>-->
+
+	
+	<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url '2.html' %}">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+      
+
+     <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>-->
+
+</center>
+	<!--<div>
+	<h1 style="background-color:blue; color:white; font-family:veranda">Portfolio</h1>
+</div>-->
+<div>
+	<!--<section>-->
+		<nav style="float:left;width:30%;height:200px; background-color:grey;">
+			<h1 style="text-align:center;padding-top: 50px;color: white;">My Portfolio</h1>
+		</nav>
+
+		<p style="float: left;width: 70%;height:200px;background-color:black;color: white;padding-left: 40px;padding-top: 40px;">
+			
+			Hello!
+			Myself Shubham Shah<br>
+			I am a Indian-based design practitioner passionate about accessibility design and empowering people. I am currently a service designer at GLS University
+		</p>
+	<!--</section>-->
+</div>
+
+<div style="background-color: darkseagreen;float: left;margin-top: -16px;">
+	<div style="float:left;">
+		{% load static %}
+		<img src="{% static 'portfolio.jpg' %}" alt="myimage" style="width:300px;height:300px;"><br>
+	</div>
+	<div style="font-size: 20px;">
+		<p>
+		Build stunning websites with the Skills Test!
+		Enhance your web design and development skills with Skills Test - Web Design and Development. <br>This course offers personalised evaluation and feedback from industry experts to improve your ability to create visually appealing websites, optimise the user experience, and develop robust web applications.<br> Benchmark your skills against market standards and take your web design and development career to the next level. Enrol today and advance your career.
+		</p>
+	</div>
+
+</div>
+
+<div style="background-color: darkseagreen;float: left;margin-top: -16px;">
+	<div style="float: left;">
+		{% load static %}
+		<img src="{% static 'portfolio.jpg' %}" alt="myimage" style="width:300px;height:300px;"><br>
+	</div>
+	<div style="font-size: 20px">
+		<p>
+		Build stunning websites with the Skills Test!
+		Enhance your web design and development skills with Skills Test - Web Design and Development. <br>This course offers personalised evaluation and feedback from industry experts to improve your ability to create visually appealing websites, optimise the user experience, and develop robust web applications.<br> Benchmark your skills against market standards and take your web design and development career to the next level. Enrol today and advance your career.
+		</p>
+	</div>
+
+</div>
+
+	<footer style="background-color:grey;padding:80px;text-align:left;color:white;left:0;bottom:0;width:100%;display: flex;">
+		
+			LET'S CONNECT<br>
+			Shubhambshah.imscit20@gmail.com<br>
+			LINKEDIN<br>
+			MEDIUM
+		
+	</footer>
+</body>
+</html>
